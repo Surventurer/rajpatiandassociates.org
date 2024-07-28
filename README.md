@@ -19,9 +19,9 @@ To set up the projects locally, follow these steps:
 
 Clone the repository:
 
-    ````
+    
     git clone https://github.com/Surventurer/rajpatiandassociates.org.git
-    ````
+    
 Note: Only after taking permission.
 
 ## License
