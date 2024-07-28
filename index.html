@@ -20,6 +20,17 @@
     <link rel="stylesheet" href="css/animated.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <script src="js/lightbox-plus-jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "l1Zzso1XadvRJAUXd",
+    });
+    })();
+    </script>
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11154490173">
     </script>
@@ -36,6 +47,7 @@
 </head>
 
 <body>
+    <script src="js/email.js"></script>
     <style>
         .whatsapp {
             position: fixed;
@@ -560,26 +572,26 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <form class="span8" action="submit.php" method="post">
+                        <form class="span8">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="span3">
                                         <label> Name</label>
-                                        <input class="span3 form-control" placeholder="Your First Name" type="text" name="name" required>
+                                        <input id="name" class="span3 form-control" placeholder="Your First Name" type="text" required>
                                         <br>
                                         <label>Email Address</label>
-                                        <input class="span3 form-control" placeholder="Your email address" type="email" name="email" required>
+                                        <input id="email" class="span3 form-control" placeholder="Your email address" type="email" required>
                                         <br>
                                         <label>Phone No.</label>
-                                        <input class="span3 form-control" placeholder="Your Phone Number" type="text" name="mobile" required> </div>
+                                        <input id="phoneno" class="span3 form-control" placeholder="Your Phone Number" type="text" required> </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="span5">
                                         <label>Message</label>
-                                        <textarea class="input-xlarge form-control span5" id="message" name="message" rows="9" required> </textarea>
+                                        <textarea class="input-xlarge form-control span5" id="message" rows="9" required> </textarea>
                                     </div>
                                     <br>
-                                    <button id="send-button" class="btn btn-primary btn-md" type="submit" name="submit">Send</button>
+                                    <button onclick="sendMail()" id="send-button" class="btn btn-primary btn-md" type="submit">Send</button>
                                 </div>
                             </div>
                         </form>
@@ -590,7 +602,7 @@
     </section>
 
 
-    <div class="modal" id="enquirymodal" tabindex="-1" role="dialog" aria-labelledby="enquirymodal" aria-hidden="true">
+    <div class="modal" id="enquirymodal" tabindex="-1" role="dialog" aria-labelledby="enquirymodal" aria-hidden="false">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -599,26 +611,26 @@
                     <h4 class="modal-title">Enquiry Now</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="span8" action="submit.php" method="post">
+                    <form class="span8">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="span3">
                                     <label> Name</label>
-                                    <input class="span3 form-control" placeholder="Your First Name" type="text" name="name" required>
+                                    <input id="name1" class="span3 form-control" placeholder="Your First Name" type="text" required>
                                     <br>
                                     <label>Email Address</label>
-                                    <input class="span3 form-control" placeholder="Your email address" type="email" name="email" required>
+                                    <input id="email1" class="span3 form-control" placeholder="Your email address" type="email" required>
                                     <br>
                                     <label>Phone No.</label>
-                                    <input class="span3 form-control" placeholder="Your Phone Number" type="text" name="mobile" required> </div>
+                                    <input id="phoneno1" class="span3 form-control" placeholder="Your Phone Number" type="text" required> </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="span5">
                                     <label>Message</label>
-                                    <textarea class="input-xlarge form-control span5" id="message" name="message" rows="9" required> </textarea>
+                                    <textarea class="input-xlarge form-control span5" id="message1" name="message" rows="9" required> </textarea>
                                 </div>
                                 <br>
-                                <button class="btn btn-primary btn-md" type="submit" name="submit">Send</button>
+                                <button onclick="sendMail1()" class="btn btn-primary btn-md" type="submit">Send</button>
                             </div>
                         </div>
                     </form>
