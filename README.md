@@ -1,4 +1,4 @@
-# Rajpati and Associates Legal Firm
+# Rajpati And Associates Legal Firm
 
 Welcome to the GitHub repository for Rajpati and Associates, a premier legal firm specializing in various areas of law including corporate, criminal, family, and civil litigation. This repository contains the code for the website.
 
