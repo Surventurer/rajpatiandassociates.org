@@ -6,7 +6,7 @@ Welcome to the GitHub repository for Rajpati and Associates, a premier legal fir
 
 - [About Us](#about-us)
 - [Installation](#installation)
-- [License](#license)
+- [Background Story](#Background-Story)
 - [Contact](#contact)
 
 ## About Us
@@ -24,9 +24,15 @@ Clone the repository:
     
 Note: Only after taking permission.
 
-## License
+## Background Story
 
-This project is licensed under the No License. which can prevent anyone from legally using your Github projects.
+Several years ago, a web developer from Delhi was hired by my father's firm to build a single-page website for Rajpati and Associates. The agreement was straightforward: the developer would design and host the website for ₹17,000, and he delivered the site on time.
+
+About three years later, the developer contacted us again, asking for additional payment to keep the website live. We paid him. A year after that, he requested more money, but this time, we chose not to continue the arrangement. As a result, he took down the website and removed our domain: rajpatiandassociates.org.
+
+Fortunately, before the site was removed, I had made a full copy and backup of the website. I’ve since made some updates and improvements to the original design. This project is the restored and updated version of the original website, now maintained independently.
+
+Thanks for reading!
 
 ## Contact
 
